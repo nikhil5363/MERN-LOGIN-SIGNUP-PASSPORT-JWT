@@ -4,7 +4,7 @@ const userdb = require("../models/userSchema");
 var bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
 
-
+// Sign Up
 router.post("/register", async (req, res) => {
 
     const { fname, email, password, cpassword } = req.body;
